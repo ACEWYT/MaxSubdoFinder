@@ -55,7 +55,8 @@ Subdomain Finder"""+CEN)
 			word = line.strip()
 			test_url = word+"."+domain
 			response = request(test_url)
-			if response:
+			proc = multiprocessing.Process(target=response, args=(10,20))
+			if proc:
 				print(CGR+"[+]"+CEN+" Subdomain Ditemukan >> "+CGR+test_url+CEN)
 
 except KeyboardInterrupt:
