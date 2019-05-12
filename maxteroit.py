@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import requests, os, sys
+import requests, os, sys, multiprocessing
 try :
 	CGR = '\33[34m'
 	CEN = '\33[0m'
